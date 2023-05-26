@@ -10,7 +10,8 @@ class ProjectController extends Controller
 {
     public function index()
     {
-        $portf = Portf::all();
+        $portf = Portf::with('type', 'technologies')->get();
+
         return response()->json([
             'success' => true,
             'results' => $portf

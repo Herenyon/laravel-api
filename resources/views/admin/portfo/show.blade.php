@@ -10,7 +10,7 @@
        <h3>{{ $portfo->type->name }}</h3>
    @endif
     
-       <h3>{{ $portfo->technology->name }}</h3>
+       {{-- <h3>{{ $portfo->technology->name }}</h3> --}}
 
 </div>
 @endsection
