@@ -16,3 +16,4 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('portf', [ProjectController::class, 'index']);
+Route::get('portf/{slug}', [ProjectController::class, 'show']);
