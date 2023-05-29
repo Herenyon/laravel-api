@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Api\ProjectController;
+use App\Http\Controllers\Api\TypeController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -17,3 +18,5 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('portf', [ProjectController::class, 'index']);
 Route::get('portf/{slug}', [ProjectController::class, 'show']);
+Route::get('types', [TypeController::class, 'index']);
+Route::get('types/{slug}', [TypeController::class, 'show']);
