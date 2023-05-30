@@ -11,7 +11,7 @@ class Type extends Model
 
     protected $guarded = ['slug'];
 
-    public function types()
+    public function portfs()
     {
         return $this->hasMany(Portf::class);
     }
